@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic js</title>
+</head>
+<body>
+    
+    <!-- 
+    <input class="numberInput" type="text">
+    <p></p>
+    -->
+    
+
+    <script>
+        /*let currentUser = prompt("Who's there?");
+        if (currentUser === null || 0) {
+            alert ("Cancelled");
+        }
+        else if (currentUser === "Admin") {
+            let password = prompt("password");
+                if (password === null || 0) {
+                    alert("Cancelled");
+                } 
+                else if (password === "TheMaster") {
+                        alert("Welcome!");
+                }
+                else {
+                    alert("Wrong password");
+                }
+        }
+        else {
+                alert("I don't know you.");
+        }
+        */
+
+        /*let message,
+            login = "Employee";
+
+            message = (login === "Employee") ? "Hello" : 
+                      (login === "Director") ? "Greetings" :
+                      (login === "") ? "No login" : "";
+                      console.log(message);
+        */
+
+        /*const input = document.querySelector('.numberInput');
+        const para = document.querySelector('p');
+        function squared (num) {
+            return num*num;
+        }
+        function cubed (num) {
+            return num*num*num;
+        }
+        function factorial (num) {
+            if (num < 0) return undefined;
+            if (num == 0) return 1;
+            let x = num -1;
+            while  (x>1) {
+                num *= x;
+                x--;
+            }
+            return num;
+        }
+        input.addEventListener('change',() => {
+            const num = parseFloat(input.value);
+            if (isNaN(num)) {
+                para.textContent = 'You need to enter a number!';
+            }
+            else {
+                para.textContent = `${num} squared is ${squared(num)}. `;
+                para.textContent += `${num} cubed is ${cubed(num)}. `;
+                para.textContent += `${num} factorial is ${factorial(num)}. `;
+            }
+        });*/
+        console.log(addSeven(5));
+        console.log(capitalize("hELLO WorLD!"));
+        console.log(lastLetter("heieieieieieaafsaads"));
+
+        function addSeven (num) {
+           return num += 7;
+        }
+
+        let multiply = (a,b) => a*b;
+
+        console.log(multiply(6,20));
+
+        function capitalize (string) {
+            if (typeof string !== "string") {
+                return "Invalid entry";
+            }
+            else {
+                return (string.charAt(0)).toUpperCase() + (string.substring(1)).toLowerCase();
+            }
+        }
+
+        function lastLetter(string) {
+            if (typeof string !== "string") {
+                return "Invalid entry";
+            }
+            else {
+                return string.substr(-1);
+            } 
+        }
+    </script>
+</body>
+</html>
